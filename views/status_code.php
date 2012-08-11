@@ -34,7 +34,7 @@
             <?php if($this->references) { ?>
             <div id="code_references">
                 <div class="header">
-                    <?php echo $this->code; ?> / <span class="status_title">code references</span>
+                    <?php echo $this->code; ?> / <span class="status_title">code reference(s)</span>
                 </div>
                 <div class="info_list">
                     <?php foreach($this->references as $reference) { ?>
@@ -43,7 +43,7 @@
                             <?php echo $reference["title"]; ?>         
                         </div>
                         <div class="value">
-                            &#8220;<?php echo $reference["value"]; ?>&#8221;
+                            <?php echo $reference["value"]; ?>
                         </div>
                         <div class="clear"></div>
                     </div>
