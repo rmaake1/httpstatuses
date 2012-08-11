@@ -60,7 +60,10 @@ turning new lines into linebreaks, if you wish to include HTML that's fine
 (preferably only links though and code tags)
 
 ## to do
-clean up the HTML and CSS
+- clean up the HTML and CSS  
+- Add some sort of "global reference" system, where a code reference can be 
+added that applies to all status codes based on a property, eg: adding an http 
+status cats (http://httpcats.herokuapp.com/) link to each code page
 
 ## notes
 
