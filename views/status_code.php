@@ -27,7 +27,7 @@
             <div id="desc">
                 <?php foreach($this->descriptions as $type => $description) { ?>
                 <p id="<?php echo $type; ?>">
-                    &#8220;<?php echo $description["body"]; ?>&#8220; &mdash; <a class="reference" href="<?php echo $description["link"]; ?>"><?php echo $type; ?></a>
+                    &#8220;<?php echo nl2br($description["body"]); ?>&#8220; &mdash; <a class="reference" href="<?php echo $description["link"]; ?>"><?php echo $type; ?></a>
                 </p>
                 <?php } ?>
             </div>

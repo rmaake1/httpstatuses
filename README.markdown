@@ -54,7 +54,9 @@ via git)
 }
 ```
 
-JSON should be formatted as above (lots of indentation :-))
+JSON should be formatted as above (lots of indentation :-)) using three space 
+tab and \r\n for new lines in descriptions. There's a good JSON formatter + 
+validator [here (use default options)](http://jsonformatter.curiousconcept.com/)
 
 ## to do
 clean up the HTML and CSS
