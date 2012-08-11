@@ -38,11 +38,26 @@ via git)
                "body":"IETF Description",
                "link":"http:\/\/www.ietf.org\/rfc\/rfc2616.txt"
             }
+         },
+         "references":{
+            "item":{
+                "title":"Reference Title",
+                "value":"Reference Value"
+            },
+            "item2":{
+                "title":"Reference Title",
+                "value":"Reference Value"
+            }
          }
       }
    }
 }
 ```
+
+JSON should be formatted as above (lots of indentation :-))
+
+## to do
+clean up the HTML and CSS
 
 ## notes
 

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title><?php echo $this->code; ?> &mdash; httpstatus.es</title>
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/style.min.css" type="text/css" />
         <script type="text/javascript">
 
             var _gaq = _gaq || [];
