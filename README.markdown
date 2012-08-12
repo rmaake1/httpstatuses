@@ -64,6 +64,10 @@ turning new lines into linebreaks, if you wish to include HTML that's fine
 - Add some sort of "global reference" system, where a code reference can be 
 added that applies to all status codes based on a property, eg: adding an http 
 status cats (http://httpcats.herokuapp.com/) link to each code page
+- configure httpstatuses.com to redirect
+- Decide on whether or not to add a method to return a specific class of error
+codes, eg: 4xx, 5xx. Not sure if httpstatus.es/{class} makes sense (eg:
+httpstatus.es/5) or httpstatus.es/{class}xx (eg: httpstatus.es/5xx)
 
 ## notes
 

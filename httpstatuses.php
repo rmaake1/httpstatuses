@@ -4,7 +4,7 @@ class Httpstatuses
 {
     public static function statuses($class = "*")
     {
-        $class_files = glob("codes/*.json");
+        $class_files = glob("codes/$class.json");
         
         foreach($class_files as $class_file)
         {

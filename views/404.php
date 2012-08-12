@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>(Actual) 404 &mdash; httpstatus.es</title>
+        <title>404real &mdash; httpstatus.es</title>
         <link rel="stylesheet" href="assets/css/style.min.css" type="text/css" />
         <script type="text/javascript">
 
