@@ -68,6 +68,8 @@ status cats (http://httpcats.herokuapp.com/) link to each code page
 - Decide on whether or not to add a method to return a specific class of error
 codes, eg: 4xx, 5xx. Not sure if httpstatus.es/{class} makes sense (eg:
 httpstatus.es/5) or httpstatus.es/{class}xx (eg: httpstatus.es/5xx)
+- Favicon (maybe someone else will donate one? :-))
+- Some sort of templating, why have I got the (uniform) head in 3 separate views!
 
 ## notes
 
