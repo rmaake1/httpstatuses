@@ -1,5 +1,5 @@
-httpstatus.es is an easy to use http status code reference site. An individual
-code can be accessed via httpstatus.es/{status_code}. 
+[httpstatus.es](http://httpstatus.es) is an easy to use http status code reference 
+site. An individual code can be accessed via httpstatus.es/{status_code}. 
 
 Each individual code is stored in a file specific to the class it is a part of.
 For example 404 is stored in 4.json, along with all other 4xx codes.
