@@ -22,35 +22,35 @@ via git)
 
 ```json
 {
-   "class":{
-      "title":"1xx Informational"
-   },
-   "codes":{
-      "100":{
-         "title":"Continue",
-         "summary":"Client should continue with request",
-         "descriptions":{
-            "wiki":{
-               "body":"Wikipedia description",
-               "link":"http:\/\/en.wikipedia.org\/wiki\/List_of_HTTP_status_codes#100"
+    "class":{
+        "title":"1xx Informational"
+    },
+    "codes":{
+        "100":{
+            "title":"Continue",
+            "summary":"Client should continue with request",
+            "descriptions":{
+                "wiki":{
+                    "body":"Wikipedia description",
+                    "link":"http:\/\/en.wikipedia.org\/wiki\/List_of_HTTP_status_codes#100"
+                },
+                "ietf":{
+                    "body":"IETF Description",
+                    "link":"http:\/\/www.ietf.org\/rfc\/rfc2616.txt"
+                }
             },
-            "ietf":{
-               "body":"IETF Description",
-               "link":"http:\/\/www.ietf.org\/rfc\/rfc2616.txt"
+            "references":{
+                "item":{
+                    "title":"Reference Title",
+                    "value":"Reference Value"
+                },
+                "item2":{
+                    "title":"Reference Title",
+                    "value":"Reference Value"
+                }
             }
-         },
-         "references":{
-            "item":{
-                "title":"Reference Title",
-                "value":"Reference Value"
-            },
-            "item2":{
-                "title":"Reference Title",
-                "value":"Reference Value"
-            }
-         }
-      }
-   }
+        }
+    }
 }
 ```
 
