@@ -42,7 +42,7 @@
             "references":{
                 "rails":{
                     "title":"Rails HTTP Status Symbol",
-                    "value":":unauthorised"
+                    "value":":unauthorized"
                 }
             }
         },
