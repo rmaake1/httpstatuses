@@ -544,6 +544,17 @@
                 }
             }
         },
+        "451":{
+            "code":"451",
+            "title":"Wrong Exchange server",
+            "summary":"The server cannot reach the client's mailbox.",
+            "descriptions":{
+                "MS-ASHTTP":{
+                    "body":"If the client is attempting to connect to the wrong server (that is, a server that cannot access the user's mailbox), or if there is a more efficient server to use to reach the user's mailbox, then a 451 Redirect error is returned.",
+                    "link":"http://msdn.microsoft.com/en-us/library/gg651019"
+                }
+            }
+        },
         "499":{
             "code":"499",
             "title":"Client Closed Request",
