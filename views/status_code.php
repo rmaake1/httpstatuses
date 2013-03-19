@@ -33,7 +33,7 @@
                 </p>
                 <?php } ?>
             </div>
-            <?php if($this->references) { ?>
+            <?php if(isset($this->references)) { ?>
             <div id="code_references">
                 <div class="header">
                     <?php echo $this->code; ?> / <span class="status_title">code reference(s)</span>
