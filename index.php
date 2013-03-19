@@ -1,8 +1,7 @@
 <?php
 
-    require 'klein.php';
+    require 'vendor/autoload.php';
     require 'httpstatuses.php';
-    require 'helper.php';
     
     respond('/', function($request, $response) {
         $class_list = Httpstatuses::statuses();

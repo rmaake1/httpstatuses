@@ -27,12 +27,12 @@
             httpstatus.es
             <div class="share_buttons">
                 <!--
-                <div class="share_button" id="gittip">
-                    <iframe style="border: 0; margin: 0 20px 0 0; padding: 0;" src="https://www.gittip.com/citricsquid/widget.html" width="48" height="20"></iframe>
+                <div class="share_button" id="github">
+                    <iframe src="http://ghbtns.com/github-btn.html?user=citricsquid&repo=httpstatus.es&type=watch" allowtransparency="true" frameborder="0" scrolling="0" width="72" height="20"></iframe>
                 </div>
                 -->
                 <div class="share_button" id="twitter">
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="citricsquid">Tweet</a>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="citricsquid" data-url="http://httpstatus.es">Tweet</a>
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </div>
                 <div class="share_button" id="facebook">
@@ -48,9 +48,7 @@
                 Maintained by 
                 <a href="http://twitter.com/citricsquid">@citricsquid</a>.
                 New codes and improvements can be commited via the 
-                <a href="https://github.com/citricsquid/httpstatus.es">
-                    Github repository
-                </a>
+                <a href="https://github.com/citricsquid/httpstatus.es">Github repository</a>.
             </p>
         </div>
         <div id="statuses">
