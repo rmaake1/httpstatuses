@@ -48,7 +48,7 @@
                 Maintained by 
                 <a href="http://twitter.com/citricsquid">@citricsquid</a>.
                 New codes and improvements can be commited via the 
-                <a href="https://github.com/citricsquid/httpstatus.es">Github repository</a>.
+                <a href="https://github.com/citricsquid/httpstatus.es">GitHub repository</a>.
             </p>
         </div>
         <div id="statuses">
