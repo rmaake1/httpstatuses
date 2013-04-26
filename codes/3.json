@@ -49,7 +49,7 @@
         "302":{
             "code":"302",
             "title":"Found",
-            "summary":"response to request found via alternative URI",
+            "summary":"temporary response to request found via alternative URI",
             "descriptions":{
                 "wikipedia":{
                     "body":"This is an example of industrial practice contradicting the standard. HTTP\/1.0 specification (RFC 1945) required the client to perform a temporary redirect (the original describing phrase was \"Moved Temporarily\"), but popular browsers implemented 302 with the functionality of a 303 See Other. Therefore, HTTP\/1.1 added status codes 303 and 307 to distinguish between the two behaviours. However, some Web applications and frameworks use the 302 status code as if it were the 303.",
@@ -70,7 +70,7 @@
         "303":{
             "code":"303",
             "title":"See Other",
-            "summary":"response to request found via alternative URI",
+            "summary":"permanent response to request found via alternative URI",
             "descriptions":{
                 "wikipedia":{
                     "body":"The response to the request can be found under another URI using a GET method. When received in response to a POST (or PUT\/DELETE), it should be assumed that the server has received the data and the redirect should be issued with a separate GET message.",
