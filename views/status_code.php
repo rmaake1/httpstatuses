@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title><?php echo $this->code; ?> &mdash; httpstatus.es</title>
         <link rel="author" href="humans.txt" />
-        <link rel="stylesheet" href="assets/css/style.min.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
         <link rel="shortcut icon" href="assets/img/favicon.ico">
         <script type="text/javascript">
 
