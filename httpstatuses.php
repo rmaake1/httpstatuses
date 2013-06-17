@@ -37,6 +37,6 @@ class Httpstatuses
 
         $code_list = json_decode($class_file, true);
 
-        return array('group_name' => $code_list['class']['title'])+$code_list['codes'] ?: false;
+        return array('desc' => $code_list['class']['title'], 'class' => $code_list['class']['class']) + $code_list['codes'] ?: false;
     }
 }

@@ -1,21 +1,21 @@
-            <div class="header multi">
-                <?php echo $this->group; ?>xx / <span class="status_title"><?php echo $this->codes['group_name']; ?></span>
+            <div class="status_list" id="<?php echo $this->codes['class']; ?>">
+                <div class="head">
+                    <div class="title"><?php echo $this->codes['class']; ?>xx <?php echo $this->codes['desc']; ?></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="statuses">
+                    <?php foreach($this->codes as $code => $info) { if($code == 'desc' || $code == 'class') continue; ?>
+                    <div class="status">
+                        <div class="st"><a title="<?php echo $info["title"]; ?>" href="/<?php echo $code; ?>"><?php echo $code; ?></a></div>
+                        <div class="description"><?php echo $info["summary"]; ?></div>
+                    </div>
+                    <?php } ?>
+                </div>
+                <div class="clear"></div>
             </div>
-            <?php foreach($this->codes as $key => $value) { if($key == 'group_name') continue; ?>
-            <div class="header">
-                <a href="/<?php echo $value['code']; ?>"><?php echo $value['code']; ?></a> / <span class="status_title"><?php echo $value['title']; ?></span>
-            </div>
-            <div class="desc">
-                <?php foreach($value['descriptions'] as $type => $description) { ?>
-                <p id="<?php echo $type; ?>">
-                    &#8220;<?php echo nl2br($description["body"]); ?>&#8220; &mdash; <a class="reference" href="<?php echo $description["link"]; ?>"><?php echo $type; ?></a>
-                </p>
-                <?php } ?>
-            </div>
-            <?php } ?>
             <div id="return">
                 <a href="http://httpstatus.es">&larr; return</a>
-            </div>  
+            </div>
         </div>
     </body>
 </html>
