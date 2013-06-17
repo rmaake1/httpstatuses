@@ -3,9 +3,6 @@
 require_once __DIR__ . '/vendor/autoload.php';
 require 'httpstatuses.php';
 
-$base = dirname($_SERVER['PHP_SELF']);
-if(ltrim($base, '/')) $_SERVER['REQUEST_URI'] = substr($_SERVER['REQUEST_URI'], strlen($base));
-
 $klein = new \Klein\Klein();
     
 $klein->respond('/', function($request, $response, $service) {
