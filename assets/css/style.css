@@ -35,10 +35,6 @@ a:hover {
     margin-bottom: 10px;
 }
 
-.header.multi {
-    font-size: 32px;
-}
-
 .header .status_title {
     color: #BBB;
     text-transform: uppercase;
@@ -74,19 +70,17 @@ a:hover {
     color: #AAA;
 }
 
-#desc,
-.desc {
+#desc {
     font-family: Georgia;
     font-size: 14px;
     line-height: 24px;
 }
-#desc p,
-.desc p {
+
+#desc p {
     margin-bottom: 10px;
 }
 
-#desc .reference,
-.desc .reference {
+#desc .reference {
     font-size: 13px;
 }
 
