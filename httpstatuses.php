@@ -9,7 +9,7 @@ class Httpstatuses
         foreach($class_files as $class_file)
         {
             $class = json_decode(file_get_contents($class_file), true);
-            $classes[$class["class"]["class"]] = $class;
+            $classes[$class['class']['class']] = $class;
         }
         
         return $classes;
@@ -25,6 +25,18 @@ class Httpstatuses
         
         $code_list = json_decode($class_file, true);
         
-        return $code_list["codes"][$code] ?: false;
+        return $code_list['codes'][$code] ?: false;
+    }
+
+    public static function group($code)
+    {
+        $class_file = file_get_contents("codes/$code.json");
+
+        if(!$class_file)
+            return false;
+
+        $code_list = json_decode($class_file, true);
+
+        return array('desc' => $code_list['class']['title'], 'class' => $code_list['class']['class']) + $code_list['codes'] ?: false;
     }
 }
