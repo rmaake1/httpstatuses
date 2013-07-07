@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
         <title>404real &mdash; httpstatus.es</title>
         <link rel="author" href="humans.txt" />
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
