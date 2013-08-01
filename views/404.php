@@ -33,7 +33,7 @@
                 <p>
                     If there should
                     be something here you can submit a new status code via the
-                    <a href="http://github.com/citricsquid/httpstatus.es">
+                    <a href="https://github.com/citricsquid/httpstatus.es">
                         httpstatus.es repository
                     </a> on github.
                 </p>
