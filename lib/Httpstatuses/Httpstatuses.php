@@ -1,8 +1,10 @@
 <?php
 
+namespace Httpstatuses;
+
 class Httpstatuses
 {
-    public static function statuses($class = "*")
+    public function statuses($class = "*")
     {
         $class_files = glob("codes/$class.json");
         
@@ -15,7 +17,7 @@ class Httpstatuses
         return $classes;
     }
     
-    public static function status($code)
+    public function status($code)
     {
         $class = substr($code, 0, 1);
         $class_file = file_get_contents("codes/$class.json");
@@ -25,6 +27,6 @@ class Httpstatuses
         
         $code_list = json_decode($class_file, true);
         
-        return $code_list["codes"][$code] ?: false;
+        return isset($code_list["codes"][$code]) ? $code_list["codes"][$code] : false;
     }
 }
