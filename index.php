@@ -1,25 +1,28 @@
 <?php
 
-    require 'vendor/autoload.php';
-    require 'httpstatuses.php';
-    
-    respond('/', function($request, $response) {
-        $class_list = Httpstatuses::statuses();
-        $response->render('views/index.php', array("class_list" => $class_list));
-    });
+require 'vendor/autoload.php';
+require 'lib/Httpstatuses/Httpstatuses.php';
 
-    respond('/[i:id]', function($request, $response) {
-        $status_code = $request->param('id');
-        $code = Httpstatuses::status($status_code);
-        
-        if(!$code)
-            $response->render('views/404.php');
-        
-        $response->render('views/status_code.php', $code);
-    });
-    
-    respond('404', function ($request, $response) {
-        $response->render('views/404.php');
-    });
-   
-    dispatch();
+$klein = new \Klein\Klein();
+$httpstatuses = new \Httpstatuses\httpstatuses();
+
+$klein->respond('GET', '/', function ($request, $response, $service) use ($httpstatuses) {
+    $class_list = $httpstatuses->statuses();
+    $service->render('views/index.php', array("class_list" => $class_list));
+});
+
+$klein->respond('GET', '/[i:id]', function ($request, $response, $service) use ($httpstatuses) {
+    $status_code = $request->param('id');
+    $code = $httpstatuses->status($status_code);
+
+    if (!$code)
+        $service->render('views/404.php');
+
+    $service->render('views/status_code.php', $code);
+});
+
+$klein->respond('GET', '404', function ($request, $response, $service) {
+    $service->render('views/404.php');
+});
+
+$klein->dispatch();
