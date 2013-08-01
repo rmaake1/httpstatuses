@@ -17,7 +17,7 @@ body {
 a {
     font-weight: bold;
     text-decoration: none;
-    color: #d6156c;
+    color: #D6156C;
 }
 
 a:hover {
@@ -25,8 +25,15 @@ a:hover {
 }
 
 #wrapper {
-    margin: 40px;
-    width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 600px;
+}
+
+@media (min-width: 480px) {
+    #wrapper {
+        margin: 20px auto;
+    }
 }
 
 .header {
@@ -51,6 +58,18 @@ a:hover {
     display: block;
 }
 
+#advert{
+    background-color: #FFEAF2;
+    height: 20px;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.ad{
+    margin: auto;
+    width: 600px;
+}
+
 #return {
     font-size: 14px;
 }
@@ -65,16 +84,12 @@ a:hover {
     margin-bottom: 10px;
 }
 
-#intro a {
-    text-decoration: none;
-    color: #AAA;
-}
-
 #desc {
     font-family: Georgia;
     font-size: 14px;
     line-height: 24px;
 }
+
 #desc p {
     margin-bottom: 10px;
 }
@@ -109,12 +124,18 @@ a:hover {
     float: right;
 }
 
-.status_list .status {
-    width: 180px;
-    padding-right: 20px;
+.status {
     height: 70px;
     float: left;
     overflow: hidden;
+    width: 100%;
+}
+
+@media (min-width: 480px) {
+    .status {
+        margin: 0 2% 0 0;
+        width: 30%;
+    }
 }
 
 .status_list .status .st {
@@ -126,7 +147,6 @@ a:hover {
     font-size: 11px;
     height: 46px;
     overflow: hidden;
-    width: 160px;
 }
 
 #code_references {
