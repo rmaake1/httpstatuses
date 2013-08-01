@@ -22,15 +22,15 @@
     <meta name="description" content="HTTP Status code list / directory with wikipedia and ietf descriptions"/>
 </head>
 <body>
+    <div id="advert">
+        <div class="ad">
+            Check out pure DNS domain redirects with <a href="http://cnamer.com">CNAMER</a>.
+        </div>
+    </div>
     <div id="wrapper">
         <div class="header">
             httpstatus.es
             <div class="share_buttons">
-                <!--
-                <div class="share_button" id="github">
-                    <iframe src="http://ghbtns.com/github-btn.html?user=citricsquid&repo=httpstatus.es&type=watch" allowtransparency="true" frameborder="0" scrolling="0" width="72" height="20"></iframe>
-                </div>
-                -->
                 <div class="share_button" id="twitter">
                     <a href="https://twitter.com/share" class="twitter-share-button" data-via="citricsquid" data-url="http://httpstatus.es">Tweet</a>
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
