@@ -169,7 +169,7 @@
         "308":{
             "code":"308",
             "title":"Resume Incomplete",
-            "summary":"resumable HTTP Requests",
+            "summary":"resumable HTTP requests",
             "descriptions":{
                 "wikipedia":{
                     "body":"This code is used in the Resumable HTTP Requests Proposal to resume aborted PUT or POST requests.",
