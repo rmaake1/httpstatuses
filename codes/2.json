@@ -154,7 +154,7 @@
         "207":{
             "code":"207",
             "title":"Multi-Status (WebDAV) (RFC 4918)",
-            "summary":"XMLl, can contain multiple separate responses",
+            "summary":"XML, can contain multiple separate responses",
             "descriptions":{
                 "wikipedia":{
                     "body":"The message body that follows is an XML message and can contain a number of separate response codes, depending on how many sub-requests were made.",

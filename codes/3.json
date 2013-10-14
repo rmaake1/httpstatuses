@@ -148,7 +148,7 @@
         "307":{
             "code":"307",
             "title":"Temporary Redirect (since HTTP\/1.1)",
-            "summary":"connect again to different uri as provided",
+            "summary":"connect again to different URI as provided",
             "descriptions":{
                 "wikipedia":{
                     "body":"In this occasion, the request should be repeated with another URI, but future requests can still use the original URI. In contrast to 303, the request method should not be changed when reissuing the original request. For instance, a POST request must be repeated using another POST request.",
@@ -169,7 +169,7 @@
         "308":{
             "code":"308",
             "title":"Resume Incomplete",
-            "summary":"resumable HTTP Requests",
+            "summary":"resumable HTTP requests",
             "descriptions":{
                 "wikipedia":{
                     "body":"This code is used in the Resumable HTTP Requests Proposal to resume aborted PUT or POST requests.",
