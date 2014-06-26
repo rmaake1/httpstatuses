@@ -546,12 +546,16 @@
         },
         "451":{
             "code":"451",
-            "title":"Wrong Exchange server",
-            "summary":"the server cannot reach the client's mailbox",
+            "title":"Wrong Exchange server / Unavailable For Legal Reasons",
+            "summary":"the server cannot reach the client's mailbox / resource access is denied for legal reasons",
             "descriptions":{
                 "MS-ASHTTP":{
                     "body":"If the client is attempting to connect to the wrong server (that is, a server that cannot access the user's mailbox), or if there is a more efficient server to use to reach the user's mailbox, then a 451 Redirect error is returned.",
                     "link":"http://msdn.microsoft.com/en-us/library/gg651019"
+                },
+                "wikipedia":{
+                    "body":"Defined in the internet draft \"A New HTTP Status Code for Legally-restricted Resources\". Intended to be used when resource access is denied for legal reasons, e.g. censorship or government-mandated blocked access. A reference to the 1953 dystopian novel Fahrenheit 451, where books are outlawed.",
+                    "link":"http:\/\/en.wikipedia.org\/wiki\/List_of_HTTP_status_codes#451"
                 }
             }
         },
