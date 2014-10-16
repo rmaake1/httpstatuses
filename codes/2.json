@@ -185,7 +185,7 @@
             "summary":"request fulfilled, reponse is instance-manipulations",
             "descriptions":{
                 "wikipedia":{
-                    "body":"The server has fulfilled a GET request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.",
+                    "body":"The server has fulfilled a request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.",
                     "link":"http:\/\/en.wikipedia.org\/wiki\/List_of_HTTP_status_codes#226"
                 }
             },
