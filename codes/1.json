@@ -63,17 +63,6 @@
                 }
             }
         },
-        "103":{
-            "code":"103",
-            "title":"Checkpoint",
-            "summary":"resume aborted PUT or POST requests",
-            "descriptions":{
-                "wikipedia":{
-                    "body":"This code is used in the Resumable HTTP Requests Proposal to resume aborted PUT or POST requests.",
-                    "link":"http:\/\/en.wikipedia.org\/wiki\/List_of_HTTP_status_codes#103"
-                }
-            }
-        },
         "122":{
             "code":"122",
             "title":"Request-URI too long",
