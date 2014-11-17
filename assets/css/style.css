@@ -27,7 +27,7 @@ a:hover {
 #wrapper {
     margin: 0 auto;
     padding: 10px;
-    max-width: 600px;
+    max-width: 960px;
 }
 
 @media (min-width: 480px) {
@@ -67,7 +67,7 @@ a:hover {
 
 .ad{
     margin: auto;
-    width: 600px;
+    width: 960px;
 }
 
 #return {
