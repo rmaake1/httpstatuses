@@ -6,7 +6,7 @@
 body {
     color: #556270;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 14pt;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
@@ -27,7 +27,7 @@ a:hover {
 #wrapper {
     margin: 0 auto;
     padding: 10px;
-    max-width: 600px;
+    max-width: 960px;
 }
 
 @media (min-width: 480px) {
@@ -67,7 +67,7 @@ a:hover {
 
 .ad{
     margin: auto;
-    width: 600px;
+    width: 960px;
 }
 
 #return {
@@ -139,12 +139,11 @@ a:hover {
 }
 
 .status_list .status .st {
-    font-size: 14px;
     font-weight: bold;
 }
 
 .status_list .status .description {
-    font-size: 11px;
+    font-size: 0.8em;
     height: 46px;
     overflow: hidden;
 }
