@@ -2,43 +2,40 @@
 layout: default
 ---
 
-{% comment %}
-This isn't working yet. I have a feeling jekyll isn't suited for this use case.
-{% endcomment %}
-
 <div id="wrapper">
     <div class="header">
-        <?php echo $this->code; ?> / <span class="status_title"><?php echo $this->title; ?></span>
+        {{ page.code }} / <span class="status_title">{{ page.title }}</span>
     </div>
     <div id="desc">
-        <?php foreach($this->descriptions as $type => $description) { ?>
-        <p id="<?php echo $type; ?>">
-            &#8220;<?php echo nl2br($description["body"]); ?>&#8220; &mdash; <a class="reference" href="<?php echo $description["link"]; ?>"><?php echo $type; ?></a>
+        {% for description in page.descriptions %}
+        <p id="{{ description[0] }}">
+            &#8220;{{ description[1].body }}&#8220; &mdash; <a class="reference" href="{{ description[1].link }}">{{ description[0] }}</a>
         </p>
-        <?php } ?>
+        {% endfor %}
     </div>
-    <?php if(isset($this->references)) { ?>
+    {% if page.references %}
     <div id="code_references">
         <div class="header">
-            <?php echo $this->code; ?> / <span class="status_title">code reference(s)</span>
+           {{ page.code }} / <span class="status_title">code reference(s)</span>
         </div>
         <div class="info_list">
-            <?php foreach($this->references as $reference) { ?>
+            {% for reference in page.references %}
             <div class="info_item">
                 <div class="title">
-                    <?php echo $reference["title"]; ?>
+                    {{ reference[1].title }}
                 </div>
                 <div class="value">
-                    <?php echo $reference["value"]; ?>
+                    {{ reference[1].value }}
                 </div>
                 <div class="clear"></div>
             </div>
-            <?php } ?>
+            {% endfor %}
             <div class="clear"></div>
         </div>
     </div>
-    <?php } ?>
+    {% endif %}
+
     <div id="return">
-        <a href="http://httpstatus.es">&larr; return</a>
+        <a href="/">&larr; return</a>
     </div>
 </div>
