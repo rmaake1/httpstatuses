@@ -1,0 +1,5 @@
+# Site settings
+title: httpstatus.es
+
+# Build settings
+markdown: kramdown

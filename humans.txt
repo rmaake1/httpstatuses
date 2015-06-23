@@ -1,5 +1,5 @@
 /* TEAM */
-    Captain: Samuel Ryan 
+    Captain: Samuel Ryan
     Site: sam@samryan.co.uk
     Twitter: citricsquid
     Location: Brighton, England

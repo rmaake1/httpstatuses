@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<div id="advert">
+    <div class="ad">
+        Check out pure DNS domain redirects with <a href="http://cnamer.com">CNAMER</a>.
+    </div>
+</div>
+<div id="wrapper">
+    <div class="header">
+        httpstatus.es
+        <div class="share_buttons">
+            <div class="share_button" id="twitter">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="citricsquid" data-url="http://httpstatus.es">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+            <div class="share_button" id="facebook">
+                <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fhttpstatus.es&amp;send=false&amp;layout=button_count&amp;width=250&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px; text-align:right;" allowTransparency="true"></iframe>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="intro">
+        <p>
+            Database of HTTP status codes with their IETF + Wikipedia
+            descriptions and helpful code references.
+            Maintained by
+            <a href="http://twitter.com/citricsquid">@citricsquid</a>.
+            New codes and improvements can be commited via the
+            <a href="https://github.com/citricsquid/httpstatus.es">GitHub repository</a>.
+        </p>
+    </div>
+    <div id="statuses">
+        {% for code_class_hash in site.data.codes %}
+        {% assign code_class = code_class_hash[1] %}
+        <div class="status_list" id="{{ code_class.id }}">
+            <div class="head">
+                <div class="title">{{ code_class.id }}xx {{ code_class.class.title }}</div>
+                <div class="clear"></div>
+            </div>
+            <div class="statuses">
+                {% for code_hash in code_class.codes %}
+                {% assign code = code_hash[1] %}
+                <div class="status">
+                    <div class="st"><a title="{{ code.title }}" href="/{{ code.code }}">{{ code.code }}</a></div>
+                    <div class="description">{{ code.summary }}</div>
+                </div>
+                {% endfor %}
+                <div class="clear"></div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
