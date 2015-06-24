@@ -43,7 +43,7 @@ layout: default
                 {% for code_hash in code_class.codes %}
                 {% assign code = code_hash[1] %}
                 <div class="status">
-                    <div class="st"><a title="{{ code.title }}" href="/{{ code.code }}">{{ code.code }}</a></div>
+                    <div class="st"><a title="{{ code.title }}" href="{{ site.baseurl }}{{ code.code }}">{{ code.code }}</a></div>
                     <div class="description">{{ code.summary }}</div>
                 </div>
                 {% endfor %}
