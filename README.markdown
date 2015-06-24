@@ -54,6 +54,30 @@ installing Jekyll, preview the site locally with
 
 The site should now be available at http://localhost:4000.
 
+Deploying uses the trick described [here](http://stackoverflow.com/a/28252200/576932).
+
+First, set up the repository:
+
+    mkdir _site
+    cd _site/
+    git init
+    git remote add git@github.com:fordhurley/httpstatus.es.git
+    git checkout gh-pages
+    git pull
+
+Now change back to the project root and rebuild the latest:
+
+    cd ..
+    jekyll build
+
+Finally, commit the latest build:
+
+    cd _site/
+    git add -A
+    git commit -m "made it prettier"
+    git push
+
+
 # License
 
 Copyright (C) 2012 - 2013 Samuel Ryan (citricsquid)
