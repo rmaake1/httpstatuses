@@ -77,7 +77,7 @@
                     "link":"http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#503"
                 },
                 "ietf":{
-                    "body":"The server is currently unable to handle the request due to a temporary overloading or maintenance of the server. The implication is that this is a temporary condition which will be alleviated after some delay. If known, the length of the delay MAY be indicated in a Retry-After header. If no Retry-After is given, the client SHOULD handle the response as it would for a 500 response.\r\nNote: The existence of the 503 status code does not imply that a server must use it when becoming overloaded. Some servers may wish to simply refuse the connection.",
+                    "body":"The server is currently unable to handle the request due to a temporary overloading or maintenance of the server. The implication is that this is a temporary condition which will be alleviated after some delay. If known, the length of the delay MAY be indicated in a Retry-After header. If no Retry-After is given, the client SHOULD handle the response as it would for a 500 response.\nNote: The existence of the 503 status code does not imply that a server must use it when becoming overloaded. Some servers may wish to simply refuse the connection.",
                     "link":"http://www.ietf.org/rfc/rfc2616.txt"
                 }
             },
@@ -98,7 +98,7 @@
                     "link":"http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#504"
                 },
                 "ietf":{
-                    "body":"The server, while acting as a gateway or proxy, did not receive a timely response from the upstream server specified by the URI (e.g. HTTP, FTP, LDAP) or some other auxiliary server (e.g. DNS) it needed to access in attempting to complete the request.\r\nNote: Note to implementors: some deployed proxies are known to return 400 or 500 when DNS lookups time out.",
+                    "body":"The server, while acting as a gateway or proxy, did not receive a timely response from the upstream server specified by the URI (e.g. HTTP, FTP, LDAP) or some other auxiliary server (e.g. DNS) it needed to access in attempting to complete the request.\nNote: Note to implementors: some deployed proxies are known to return 400 or 500 when DNS lookups time out.",
                     "link":"http://www.ietf.org/rfc/rfc2616.txt"
                 }
             },
