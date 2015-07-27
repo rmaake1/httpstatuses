@@ -9,7 +9,8 @@ layout: default
     <div id="desc">
         {% for description in page.descriptions %}
         <p id="{{ description[0] }}">
-            &#8220;{{ description[1].body }}&#8220; &mdash; <a class="reference" href="{{ description[1].link }}">{{ description[0] }}</a>
+            &#8220;{{ description[1].body | newline_to_br }}&#8220;
+            &mdash; <a class="reference" href="{{ description[1].link }}">{{ description[0] }}</a>
         </p>
         {% endfor %}
     </div>
