@@ -7,7 +7,7 @@
         "100":{
             "code":"100",
             "title":"Continue",
-            "summary":"Client should continue with request",
+            "summary":"client should continue with request",
             "descriptions":{
                 "wikipedia":{
                     "body":"This means that the server has received the request headers, and that the client should proceed to send the request body (in the case of a request for which a body needs to be sent; for example, a POST request). If the request body is large, sending it to a server when a request has already been rejected based upon inappropriate headers is inefficient. To have a server check if the request could be accepted based on the request's headers alone, a client must send Expect: 100-continue as a header in its initial request and check if a 100 Continue status code is received in response before continuing (or receive 417 Expectation Failed and not continue).",
@@ -28,7 +28,7 @@
         "101":{
             "code":"101",
             "title":"Switching Protocols",
-            "summary":"Server is switching protocols",
+            "summary":"server is switching protocols",
             "descriptions":{
                 "wikipedia":{
                     "body":"This means the requester has asked the server to switch protocols and the server is acknowledging that it will do so.",
@@ -49,7 +49,7 @@
         "102":{
             "code":"102",
             "title":"Processing (WebDAV) (RFC 2518)",
-            "summary":"Server has received and is processing the request",
+            "summary":"server has received and is processing the request",
             "descriptions":{
                 "wikipedia":{
                     "body":"As a WebDAV request may contain many sub-requests involving file operations, it may take a long time to complete the request. This code indicates that the server has received and is processing the request, but no response is available yet. This prevents the client from timing out and assuming the request was lost.",
