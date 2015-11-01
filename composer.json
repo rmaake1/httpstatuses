@@ -1,6 +1,0 @@
-{
-    "require": {
-        "klein/klein": "*"
-    },
-    "minimum-stability": "dev"
-}
