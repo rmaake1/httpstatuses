@@ -43,6 +43,10 @@ p {
   margin-bottom: 10px;
 }
 
+code {
+  background-color: #fff;
+}
+
 .hero {
   @extend .u-full-width;
   padding: 25px 0px 10px 0px;
