@@ -1,0 +1,12 @@
+extends layout.jade
+
+block contents
+  .hero.introduction: .container: .row: .twelve.columns !{contents}
+
+  .container.codes
+    each group in groups.codes
+      section
+        h2 !{group.title}
+        each code in group.items
+          article
+            h3 #[a(href='/#{code.code}') #[span !{code.code}] #{code.title}]

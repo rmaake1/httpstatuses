@@ -1,0 +1,12 @@
+extends layout.jade
+
+block title
+  title !{code} !{title} &mdash; httpstatus.es
+
+block contents
+  .code
+    article.container.code: .row: .twelve.columns
+      h2 !{groups.codes[set].title}
+      h1 #[span !{code}] !{title}
+      != contents
+      a(href='/') &larr; Return to httpstatus.es

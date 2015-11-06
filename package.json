@@ -1,0 +1,34 @@
+{
+  "name": "httpstatus.es",
+  "version": "0.1.0",
+  "description": "An easy to reference directory of HTTP Status Codes",
+  "main": "build.js",
+  "scripts": {
+    "test": "build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/citricsquid/httpstatus.es.git"
+  },
+  "author": "Samuel Ryan <sam@samryan.co.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/citricsquid/httpstatus.es/issues"
+  },
+  "homepage": "https://github.com/citricsquid/httpstatus.es#readme",
+  "dependencies": {
+    "bower": "^1.6.5",
+    "jade": "^1.11.0",
+    "lodash.groupby": "^3.1.1",
+    "metalsmith": "^2.1.0",
+    "metalsmith-branch": "0.0.4",
+    "metalsmith-collection-grouping": "^0.1.0",
+    "metalsmith-collections": "^0.7.0",
+    "metalsmith-elevate": "0.0.0",
+    "metalsmith-ignore": "^0.1.2",
+    "metalsmith-layouts": "^1.4.2",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-sass": "^1.3.0",
+    "metalsmith-writemetadata": "^0.4.5"
+  }
+}
