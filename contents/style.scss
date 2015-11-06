@@ -52,38 +52,40 @@ code {
   padding: 25px 0px 10px 0px;
 }
 
-.introduction {
-  // border-bottom: 4px solid #f9f9f9;
-}
-
 .codes {
   margin-bottom: 40px;
 
-  section {
+  ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    list-style-type: none;
     margin-bottom: 10px;
 
     h2 {
-      font-weight: bold;
-    }
-
-    h2, h3 {
       font-family: 'Open Sans', sans-serif;
       font-size: 14px;
+      font-weight: bold;
       letter-spacing: 0.5px;
-      margin-bottom: 2px;
+      margin-bottom: 0px;
+    }
+
+    li {
+      margin-bottom: 0px;
 
       a {
         font-weight: normal;
-      }
 
-      a:hover {
-        color: #d6156d;
-      }
+        &:hover {
+          color: #d6156d;
+        }
 
-      a span {
-        color: #d6156d;
-        font-family: 'Source Code Pro';
-        width: 34px;
+        span {
+          color: #d6156d;
+          font-family: 'Source Code Pro';
+          font-weight: bold;
+          width: 34px;
+        }
       }
     }
   }
