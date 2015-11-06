@@ -7,6 +7,7 @@ var sass = require('metalsmith-sass');
 var elevate = require('metalsmith-elevate');
 var ignore = require('metalsmith-ignore');
 var collectionGrouping = require('metalsmith-collection-grouping');
+var fingerprint = require('metalsmith-fingerprint-ignore');
 
 var metalsmith = Metalsmith(__dirname);
   metalsmith
@@ -33,6 +34,8 @@ var metalsmith = Metalsmith(__dirname);
   .use(branch('*.scss')
     .use(sass())
   )
+
+  .use(fingerprint({pattern: ['style.css']}))
 
   .use(branch('**/*.md')
     .use(markdown())
