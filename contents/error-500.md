@@ -11,3 +11,5 @@ If you didn't expect to see this error please
 [create an issue via GitHub](https://github.com/citricsquid/httpstatus.es/issues).
 
 If you want to learn more about what a 500 is, visit [/500](/500)!
+
+[&larr; Return to httpstatus.es](/)

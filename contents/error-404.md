@@ -11,3 +11,5 @@ this error please
 [create an issue via GitHub](https://github.com/citricsquid/httpstatus.es/issues).
 
 If you want to learn more about what a 404 is, visit [/404](/404)!
+
+[&larr; Return to httpstatus.es](/)
