@@ -1,0 +1,14 @@
+machine:
+  node:
+    version: 4.1.0
+
+dependencies:
+  post:
+    - bower install
+    - node build
+
+deployment:
+  production:
+    branch: metalsmith
+    commands:
+      - ./deploy.sh
