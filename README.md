@@ -1,3 +1,4 @@
-httpstatus.es is an easy to reference directory of HTTP Status Codes with straight forward descriptions,
-code references and additional detailed descriptions from the IETF HTTP Working Group. Each HTTP Status Code
-is available at httpstatus.es/status_code.
+# httpstatus.es
+
+httpstatus.es is an easy to reference database of HTTP Status Codes with their
+definitions and helpful code references all in one place.
