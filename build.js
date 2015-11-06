@@ -35,7 +35,9 @@ var metalsmith = Metalsmith(__dirname);
     .use(sass())
   )
 
-  .use(fingerprint({pattern: ['style.css']}))
+  .use(fingerprint({
+    pattern: ['style.css', 'favicon.ico']
+  }))
 
   .use(branch('**/*.md')
     .use(markdown())
