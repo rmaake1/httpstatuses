@@ -1,0 +1,121 @@
+$container-width: 528px;
+
+@import "../bower_components/Skeleton-Sass/scss/skeleton.scss";
+
+.container {
+  margin: auto;
+  max-width: $container-width;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 80%;
+  }
+}
+
+body {
+  color: #556270;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  margin: 0px;
+}
+
+a {
+  color: #d6156d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a[href^='https://www.runscope.com'] {
+  color: #1b70e0;
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+code {
+  background-color: #fff;
+  word-wrap: break-word;
+}
+
+.hero {
+  @extend .u-full-width;
+  padding: 25px 0px 10px 0px;
+}
+
+.codes {
+  margin-bottom: 40px;
+
+  ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    list-style-type: none;
+    margin-bottom: 10px;
+
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      margin-bottom: 0px;
+    }
+
+    li {
+      margin-bottom: 0px;
+
+      a {
+        color: #556270;
+        font-weight: normal;
+
+        &:hover {
+          color: #d6156d;
+        }
+
+        span {
+          color: #d6156d;
+          font-family: 'Source Code Pro';
+          font-weight: bold;
+          width: 34px;
+        }
+      }
+    }
+  }
+}
+
+.code {
+  margin: 25px auto;
+
+  p:first-of-type {
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+  }
+
+  h1 {
+    font-family: 'Source Code Pro';
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    span {
+      color: #d6156d;
+    }
+  }
+
+  h2 {
+    color: #bbb;
+    font-family: 'Source Code Pro';
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+}

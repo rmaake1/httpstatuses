@@ -1,0 +1,22 @@
+{
+  "name": "httpstatus.es",
+  "description": "An easy to reference directory of HTTP Status Codes",
+  "main": "build.js",
+  "authors": [
+    "Samuel Ryan <sam@samryan.co.uk>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/citricsquid/httpstatus.es",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Skeleton-Sass": "skeleton-scss#*"
+  }
+}
