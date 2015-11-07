@@ -1,6 +1,6 @@
 {
   "name": "httpstatus.es",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "An easy to reference directory of HTTP Status Codes",
   "main": "build.js",
   "scripts": {
