@@ -95,6 +95,10 @@ code {
 .code {
   margin: 25px auto;
 
+  p:first-of-type {
+    font-size: 16px;
+  }
+
   h1 {
     font-family: 'Source Code Pro';
     letter-spacing: 0.5px;
