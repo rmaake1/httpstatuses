@@ -9,6 +9,6 @@ dependencies:
 
 deployment:
   production:
-    branch: metalsmith
+    branch: master
     commands:
       - ./deploy.sh
