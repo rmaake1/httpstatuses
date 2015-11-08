@@ -10,7 +10,7 @@ block contents
       h1 #[span !{code}] !{title}
       != contents
       if references
-        h1 #[span !{code}] Code References
+        h1.section #[span !{code}] Code References
         each value, key in references
           p !{key} #[code !{value}]
       a(href='/') &larr; Return to httpstatuses.com
