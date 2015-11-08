@@ -98,8 +98,6 @@ code {
 
   p:first-of-type {
     font-size: 18px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #eee;
   }
 
   h1 {
@@ -117,5 +115,28 @@ code {
     font-family: 'Source Code Pro';
     letter-spacing: 0.5px;
     text-transform: uppercase;
+  }
+
+  hr {
+    border-top: 1px solid #eee;
+    margin: 10px 0px;
+  }
+
+  ul {
+    font-size: 12px;
+    list-style-type: none;
+
+    li {
+      margin: 0px;
+
+      span:target {
+        background-color: #f9f9f9;
+        color: #222;
+      }
+
+      &:last-of-type {
+        margin-top: 6px;
+      }
+    }
   }
 }
