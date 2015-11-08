@@ -1,7 +1,15 @@
-# [httpstatus.es](http://httpstatus.es)
+# [httpstatuses.com][5]
 
-[httpstatus.es](http://httpstatus.es) is an easy to reference database of HTTP Status Codes
-with their definitions and helpful code references.
+[httpstatuses.com][5] is an easy to reference database of
+HTTP Status Codes with their definitions and helpful code references.
+
+## httpstatus.es
+
+Previously the project was known as [httpstatus.es][6] but
+[as per this GitHub issue][7] we have migrated to [httpstatuses.com][5] for
+SEO reasons. The httpstatus.es domain will remain available long term but
+use of httpstatuses.com is preferred, everything 301's to
+https://httpstatuses.com.
 
 ## Contributing
 
@@ -26,7 +34,10 @@ changes to the status codes please be mindful of the following:
 * If the description references a section in the current RFC, always add the RFC
     identifier. For example "Section 6.6" should become "RFC1234 Section 6.6"
 
-[1]: <https://github.com/citricsquid/httpstatus.es/issues>
+[1]: <https://github.com/citricsquid/httpstatuses/issues>
 [2]: <https://daringfireball.net/projects/markdown/syntax#link>
 [3]: <http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml>
 [4]: <http://www.slate.com/articles/technology/technology/2011/01/space_invaders.html>
+[5]: <https://httpstatuses.com>
+[6]: <https://httpstatus.es>
+[7]: <https://github.com/citricsquid/httpstatuses/issues/29>

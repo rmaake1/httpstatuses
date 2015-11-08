@@ -1,12 +1,12 @@
 {
-  "name": "httpstatus.es",
+  "name": "httpstatuses",
   "description": "An easy to reference directory of HTTP Status Codes",
   "main": "build.js",
   "authors": [
     "Samuel Ryan <sam@samryan.co.uk>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/citricsquid/httpstatus.es",
+  "homepage": "https://github.com/citricsquid/httpstatuses",
   "moduleType": [],
   "private": true,
   "ignore": [
