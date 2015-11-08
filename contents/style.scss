@@ -96,7 +96,7 @@ code {
 .code {
   margin: 25px auto;
 
-  p:first-of-type {
+  > p:first-of-type {
     font-size: 18px;
   }
 
@@ -121,14 +121,29 @@ code {
     text-transform: uppercase;
   }
 
+  ul {
+    font-size: 14px;
+    list-style-position: outside;
+    margin: 0px 0px 10px 20px;
+
+    li {
+      margin: 2px 0 0 0;
+    }
+
+    ul {
+      margin: 5px 0 0 10px;
+    }
+  }
+
   hr {
     border-top: 1px solid #eee;
     margin: 10px 0px;
   }
 
-  ul {
+  hr ~ ul {
     font-size: 12px;
     list-style-type: none;
+    margin: 0px;
 
     li {
       margin: 0px;
