@@ -128,6 +128,7 @@ code {
   ul {
     font-size: 14px;
     list-style-position: outside;
+    list-style-type: disc;
     margin: 0px 0px 10px 20px;
 
     li {
@@ -135,6 +136,7 @@ code {
     }
 
     ul {
+      list-style-type: circle;
       margin: 5px 0 0 10px;
     }
   }
