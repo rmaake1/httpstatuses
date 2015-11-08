@@ -24,6 +24,10 @@ a {
   color: #d6156d;
   font-weight: bold;
   text-decoration: none;
+
+  &:hover {
+    color: #fd55a2;
+  }
 }
 
 a[href^='https://www.runscope.com'] {
