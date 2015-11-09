@@ -24,6 +24,10 @@ a {
   color: #d6156d;
   font-weight: bold;
   text-decoration: none;
+
+  &:hover {
+    color: #fd55a2;
+  }
 }
 
 a[href^='https://www.runscope.com'] {
@@ -96,7 +100,7 @@ code {
 .code {
   margin: 25px auto;
 
-  p:first-of-type {
+  > p:first-of-type {
     font-size: 18px;
   }
 
@@ -108,6 +112,10 @@ code {
     span {
       color: #d6156d;
     }
+
+    &.section {
+      margin-top: 20px;
+    }
   }
 
   h2 {
@@ -117,14 +125,31 @@ code {
     text-transform: uppercase;
   }
 
+  ul {
+    font-size: 14px;
+    list-style-position: outside;
+    list-style-type: disc;
+    margin: 0px 0px 10px 20px;
+
+    li {
+      margin: 2px 0 0 0;
+    }
+
+    ul {
+      list-style-type: circle;
+      margin: 5px 0 0 10px;
+    }
+  }
+
   hr {
     border-top: 1px solid #eee;
     margin: 10px 0px;
   }
 
-  ul {
+  hr ~ ul {
     font-size: 12px;
     list-style-type: none;
+    margin: 0px;
 
     li {
       margin: 0px;
