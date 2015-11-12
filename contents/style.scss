@@ -2,6 +2,20 @@ $container-width: 528px;
 
 @import "../bower_components/Skeleton-Sass/scss/skeleton.scss";
 
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url('open-sans-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-weight: 700;
+  font-style: normal;
+  src: url('source-code-pro-700.woff') format('woff');
+}
+
 .container {
   margin: auto;
   max-width: $container-width;
@@ -37,8 +51,8 @@ a[href^='https://www.runscope.com'] {
 
 h1, h2, h3, h4, h5, h6 {
   color: #333;
-  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+  font-weight: bold;
   margin-bottom: 8px;
 }
 
