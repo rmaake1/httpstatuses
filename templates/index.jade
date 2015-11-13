@@ -6,6 +6,6 @@ block contents
   .container.codes: .row: .twelve.columns
     each group in groups.codes
       ul
-        h2 !{group.title}
+        li #[h2 !{group.title}]
         each code in group.items
           li #[a(href='/#{code.code}') #[span !{code.code}] #{code.title}]
