@@ -22,6 +22,7 @@
     "jade": "^1.11.0",
     "lodash.groupby": "^3.1.1",
     "metalsmith": "^2.1.0",
+    "metalsmith-better-excerpts": "^0.1.7",
     "metalsmith-branch": "0.0.4",
     "metalsmith-collection-grouping": "^0.1.0",
     "metalsmith-collections": "^0.7.0",
