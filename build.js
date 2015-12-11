@@ -8,6 +8,7 @@ var elevate = require('metalsmith-elevate');
 var ignore = require('metalsmith-ignore');
 var collectionGrouping = require('metalsmith-collection-grouping');
 var fingerprint = require('metalsmith-fingerprint-ignore');
+var excerpts = require('metalsmith-better-excerpts');
 
 var metalsmith = Metalsmith(__dirname);
   metalsmith
@@ -41,6 +42,7 @@ var metalsmith = Metalsmith(__dirname);
 
   .use(branch('**/*.md')
     .use(markdown())
+    .use(excerpts({pruneLength: 400}))
     .use(layouts({
       engine: 'jade',
       directory: 'templates',
