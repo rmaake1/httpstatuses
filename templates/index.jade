@@ -1,5 +1,11 @@
 extends layout.jade
 
+mixin statuscode(code)
+  if !code.standard
+    li #[a(href='/#{code.code}', title='Non-standard') #[span(class='non-standard') !{code.code}] #{code.title}]
+  else
+    li #[a(href='/#{code.code}') #[span !{code.code}] #{code.title}]
+
 block contents
   .hero.introduction: .container: .row: .twelve.columns !{contents}
 
@@ -8,4 +14,4 @@ block contents
       ul
         li #[h2 !{group.title}]
         each code in group.items
-          li #[a(href='/#{code.code}') #[span !{code.code}] #{code.title}]
+          +statuscode(code)
