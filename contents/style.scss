@@ -87,6 +87,24 @@ code {
   }
 }
 
+.share {
+  @extend .u-full-width;
+  padding: 14px 0px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+
+  a {
+    color: #556270;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: normal;
+
+    &:hover {
+      color: #fd55a2;
+    }
+  }
+}
+
 .codes {
   margin-bottom: 40px;
 

@@ -4,10 +4,17 @@ block banner
   .banner: .container: .row: .twelve.columns
     p Sponsored by #[a(href='https://www.runscope.com/t/httpstatuses') Runscope &mdash; API Monitoring & Testing]
 
+block share
+    a.twitter(href='https://twitter.com/intent/tweet?hashtags=httpstatuses&text=Helpful%20HTTP%20Status%20Code%20reference%20site&url=https%3A%2F%2Fhttpstatuses.com&via=citricsquid') &commat; Share on Twitter
+    a.github(href='https://github.com/citricsquid/httpstatuses') &bigstar; Star on GitHub
+    a.pinboard(target='_blank', href='https://pinboard.in/add?showtags=yes&url=https%3A%2F%2Fhttpstatuses.com&description=HTTP%20Status%20Code%20Reference%20Site&title=httpstatuses.com&tags=reference,development') &oplus; Add to Pinboard
+
 block contents
   block banner
   .hero.introduction: .container: .row: .twelve.columns
     != contents
+  .share: .container: .row: .twelve.columns
+    block share
 
   .container.codes: .row: .twelve.columns
     each group in groups.codes
