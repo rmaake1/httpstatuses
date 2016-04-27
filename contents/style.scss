@@ -75,16 +75,20 @@ code {
 .banner {
   @extend .u-full-width;
   padding: 14px 0px;
-  background-color: #1b70e0;
-  color: #fff;
+  border-bottom: 1px solid #eee;
 
   p {
     margin-bottom: 0px;
   }
 
   a {
-    color: #fff;
+    color: #1b70e0;
     font-weight: bold;
+
+    .tagline {
+      text-transform: uppercase;
+      font-size: 11px;
+    }
   }
 }
 
