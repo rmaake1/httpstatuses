@@ -1,7 +1,13 @@
 extends layout.jade
 
+block banner
+  .banner: .container: .row: .twelve.columns
+    p Sponsored by #[a(href='https://www.runscope.com/t/httpstatuses') Runscope &mdash; API Monitoring & Testing]
+
 block contents
-  .hero.introduction: .container: .row: .twelve.columns !{contents}
+  block banner
+  .hero.introduction: .container: .row: .twelve.columns
+    != contents
 
   .container.codes: .row: .twelve.columns
     each group in groups.codes
