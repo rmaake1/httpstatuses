@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 8px;
+  letter-spacing: 0.5px;
 }
 
 p {
@@ -71,6 +72,22 @@ code {
   padding: 25px 0px 10px 0px;
 }
 
+.banner {
+  @extend .u-full-width;
+  padding: 14px 0px;
+  background-color: #1b70e0;
+  color: #fff;
+
+  p {
+    margin-bottom: 0px;
+  }
+
+  a {
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
 .codes {
   margin-bottom: 40px;
 
@@ -85,7 +102,6 @@ code {
       font-family: 'Open Sans', sans-serif;
       font-size: 14px;
       font-weight: bold;
-      letter-spacing: 0.5px;
       margin-bottom: 6px;
     }
 
@@ -120,7 +136,6 @@ code {
 
   h1 {
     font-family: 'Source Code Pro';
-    letter-spacing: 0.5px;
     text-transform: uppercase;
 
     span {
@@ -135,7 +150,6 @@ code {
   h2 {
     color: #bbb;
     font-family: 'Source Code Pro';
-    letter-spacing: 0.5px;
     text-transform: uppercase;
   }
 
