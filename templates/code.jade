@@ -6,7 +6,13 @@ block title
 block description
   meta(name='description' content='HTTP Status Code ' + code + ': ' + excerpt)
 
+block banner
+  .banner: .container: .row: .twelve.columns
+    p #[a(href='/') &larr; Return to httpstatuses.com]
+
+
 block contents
+  block banner
   article.code.container
     h2 !{groups.codes[set].title}
     h1 #[span !{code}] !{title}
