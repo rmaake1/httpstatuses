@@ -9,9 +9,10 @@ var ignore = require('metalsmith-ignore');
 var collectionGrouping = require('metalsmith-collection-grouping');
 var fingerprint = require('metalsmith-fingerprint-ignore');
 var excerpts = require('metalsmith-better-excerpts');
-var finalhandler = require('finalhandler')
-var http = require('http')
-var serveStatic = require('serve-static')
+var finalhandler = require('finalhandler');
+var http = require('http');
+var serveStatic = require('serve-static');
+var path = require('path');
 
 var metalsmith = Metalsmith(__dirname);
   metalsmith
@@ -31,7 +32,7 @@ var metalsmith = Metalsmith(__dirname);
   .use(collectionGrouping({
     codes: {
       groupBy: 'set', // set instead of class, because class is a reserved word...
-      meta: 'codes/classes.json'
+      meta: path.join('codes', 'classes.json')
     }
   }))
 
