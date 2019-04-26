@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/circleci/project/citricsquid/httpstatuses.svg)](https://circleci.com/gh/citricsquid/httpstatuses)
 
-[httpstatuses.com][5] is an easy to reference database of HTTP Status Codes with their definitions and helpful code references, each code is at `httpstatuses.com/code`. All standard codes are included, as are some non-standard codes that have significant presence in the wild.
+[httpstatuses.com][5] is an easy to reference database of HTTP Status Codes with their definitions and helpful code references, each code is at `httpstatuses.com/[code]`. All standard codes are included, as are some non-standard codes that have significant presence in the wild.
 
 ## Contributing
 
