@@ -1,0 +1,33 @@
+version: 2
+jobs:
+  install:
+    working_directory: ~/app
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Install dependencies
+          command: npm i
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Build (witout preview)
+          command: npm t
+      - run:
+          name: Deploy
+          command: ./deploy.sh
+
+workflows:
+  version: 2
+  deployment:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only:
+                - master
