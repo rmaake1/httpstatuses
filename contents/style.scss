@@ -210,3 +210,25 @@ code {
     }
   }
 }
+
+// Support dark mode based on user preference. E.g. in Windows - Settings/Personalization/Colors
+@media (prefers-color-scheme: dark) {
+
+  body, .share, code {
+    background-color: #333;
+    color: #eee;
+  }
+
+  .banner {
+    border-bottom-color: #333;
+  }
+
+  .codes ul li a, .share a {
+    color: #eee;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+
+}
