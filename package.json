@@ -4,8 +4,9 @@
   "description": "An easy to reference directory of HTTP Status Codes",
   "main": "build.js",
   "scripts": {
-    "start": "node build.js",
-    "test": "node build.js without-preview"
+    "start": "cd docs && bundle exec jekyll serve",
+    "test": "node build.js without-preview",
+    "lint": "npx markdownlint README.md docs/*.md"
   },
   "repository": {
     "type": "git",
@@ -17,24 +18,7 @@
     "url": "https://github.com/citricsquid/httpstatuses/issues"
   },
   "homepage": "https://github.com/citricsquid/httpstatuses#readme",
-  "dependencies": {
-    "finalhandler": "^0.4.1",
-    "http": "0.0.0",
-    "jade": "^1.11.0",
-    "lodash.groupby": "^3.1.1",
-    "metalsmith": "^2.1.0",
-    "metalsmith-better-excerpts": "^0.1.7",
-    "metalsmith-branch": "0.0.4",
-    "metalsmith-collection-grouping": "^0.1.0",
-    "metalsmith-collections": "^0.7.0",
-    "metalsmith-elevate": "0.0.0",
-    "metalsmith-fingerprint-ignore": "^1.1.2",
-    "metalsmith-ignore": "^0.1.2",
-    "metalsmith-layouts": "^1.4.2",
-    "metalsmith-markdown": "^0.2.1",
-    "metalsmith-sass": "^1.3.0",
-    "metalsmith-writemetadata": "^0.4.5",
-    "serve-static": "^1.10.2",
-    "skeleton-scss": "^2.0.4"
+  "devDependencies": {
+    "markdownlint-cli": "^0.31.1"
   }
 }
