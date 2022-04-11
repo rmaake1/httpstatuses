@@ -1,24 +1,22 @@
-extends layout.jade
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-block title
-  title !{code} !{title} &mdash; httpstatuses.com
+  {%- include head.html -%}
 
-block description
-  meta(name='description' content='HTTP Status Code ' + code + ': ' + excerpt)
+  <body>
 
-block banner
-  .banner: .container: .row: .twelve.columns
-    p #[a(href='/') &larr; Return to httpstatuses.com]
+    {%- include default-header.html -%}
 
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h2>{{ page.code }}: {{page.title}}</h2>
+        
+        {{ content }}
+      </div>
+    </main>
 
-block contents
-  block banner
-  article.code.container
-    h2 !{groups.codes[set].title}
-    h1 #[span !{code}] !{title}
-    != contents
-    if references
-      h1.section #[span !{code}] Code References
-      each value, key in references
-        p !{key} #[code !{value}]
-    a(href='/') &larr; Return to httpstatuses.com
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

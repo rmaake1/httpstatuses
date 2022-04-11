@@ -3,10 +3,13 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 title: HTTP Status Codes
-layout: home
+layout: page
 ---
 
-httpstatuses.github.io is an easy to reference database of HTTP Status
+[httpstatuses.github.io](https://httpstatuses.github.io) is an easy to reference database of HTTP Status
 Codes with their definitions and helpful code references all in one
 place. Visit an individual status code via
-`httpstatuses.github.io/<code>` or browse the list below.
+`httpstatuses.github.io/&lt;code%gt;` such as
+[`httpstatuses.github.io/418`](/418) or browse the list below.
+
+{% for page in site.pages %}{% if page.code > 0 %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.code }} {{ page.title }}</a><br/>{% endif %}{% endfor %}
