@@ -1,0 +1,12 @@
+titles:
+  '1': Informational
+  '2': Success
+  '3': Redirection
+  '4': Client Error
+  '5': Server Error
+colors:
+  '1': '#000000'
+  '2': '#44bb66'
+  '3': '#2266ff'
+  '4': '#ff4444'
+  '5': '#cc4422'

@@ -4,20 +4,22 @@
   "description": "An easy to reference directory of HTTP Status Codes",
   "main": "build.js",
   "scripts": {
+    "prepare": "bundle install",
     "start": "cd docs && bundle exec jekyll serve",
-    "test": "node build.js without-preview",
+    "serve": "npm run start # alias for start",
+    "test": "npm run lint",
     "lint": "npx markdownlint README.md docs/*.md"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/citricsquid/httpstatuses.git"
   },
-  "author": "Samuel Ryan <sam@samryan.co.uk>",
+  "author": "David Biesack <DavidBiesack@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/citricsquid/httpstatuses/issues"
+    "url": "https://github.com/DavidBiesack/httpstatuses/issues"
   },
-  "homepage": "https://github.com/citricsquid/httpstatuses#readme",
+  "homepage": "https://github.com/DavidBiesack/httpstatuses#readme",
   "devDependencies": {
     "markdownlint-cli": "^0.31.1"
   }
