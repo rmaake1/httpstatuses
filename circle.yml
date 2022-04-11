@@ -1,13 +1,3 @@
 machine:
   node:
-    version: 4.1.0
-
-dependencies:
-  post:
-    - node build without-preview
-
-deployment:
-  production:
-    branch: master
-    commands:
-      - ./deploy.sh
+    version: 16
