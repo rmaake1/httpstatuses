@@ -23,12 +23,14 @@ email: DavidBiesack@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   HTTP status codes with concise descriptions, links to the IETF standards,
   and code examples for each.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://httpstatuses.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://davidbiesack.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/httpstatuses" # the subpath of your site, e.g. /blog
+home: davidbiesack.github.io/httpstatuses
 twitter_username: davidbiesack
 github_username:  DavidBiesack
 theme: minima
-
+minima:
+  skin: dark
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

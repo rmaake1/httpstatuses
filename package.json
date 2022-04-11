@@ -1,6 +1,6 @@
 {
   "name": "httpstatuses",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "An easy to reference directory of HTTP Status Codes",
   "main": "build.js",
   "scripts": {
