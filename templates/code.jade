@@ -1,14 +1,14 @@
 extends layout.jade
 
 block title
-  title !{code} !{title} &mdash; httpstatuses.com
+  title !{code} !{title} &mdash; httpstatuses.io
 
 block description
   meta(name='description' content='HTTP Status Code ' + code + ': ' + excerpt)
 
 block banner
   .banner: .container: .row: .twelve.columns
-    p #[a(href='/') &larr; Return to httpstatuses.com]
+    p #[a(href='/') &larr; Return to httpstatuses.io]
 
 
 block contents
@@ -21,4 +21,4 @@ block contents
       h1.section #[span !{code}] Code References
       each value, key in references
         p !{key} #[code !{value}]
-    a(href='/') &larr; Return to httpstatuses.com
+    a(href='/') &larr; Return to httpstatuses.io

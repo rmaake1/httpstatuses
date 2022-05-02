@@ -9,4 +9,4 @@ This isn't a page to explain a status code, it's an actual 500, an Internal Serv
 
 If you want to learn more about what a 500 is, visit [/500](/500)!
 
-[&larr; Return to httpstatuses.com](/)
+[&larr; Return to httpstatuses.io](/)
