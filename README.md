@@ -6,7 +6,9 @@
 
 ## Development
 
-To build you need nodejs, run `npm install` to pull in dependencies and then `node build`, a preview will be available at [localhost:4887][6].
+App currently builds and runs on Node v12.
+
+Run `npm install` to pull in dependencies and then `node build`, a preview will be available at [localhost:4887][6].
 
 ## Contributing
 
@@ -22,7 +24,7 @@ Each status code lives in a Markdown file at [contents/codes](contents/codes), t
 * [Don't double-space after a period][4], and remove any examples of it
 * If the description references a section in the current RFC, always add the RFC identifier. For example "Section 6.6" should become "RFC1234 Section 6.6"
 
-[1]: <https://github.com/citricsquid/httpstatuses/issues>
+[1]: <https://github.com/httpstatuses/httpstatuses/issues>
 [2]: <https://daringfireball.net/projects/markdown/syntax#link>
 [3]: <http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml>
 [4]: <http://www.slate.com/articles/technology/technology/2011/01/space_invaders.html>
