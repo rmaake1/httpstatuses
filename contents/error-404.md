@@ -9,4 +9,4 @@ This isn't a page to explain a status code, it's an actual 404. The page you hav
 
 If you want to learn more about what a 404 is, visit [/404](/404)!
 
-[&larr; Return to httpstatuses.com](/)
+[&larr; Return to httpstatuses.io](/)

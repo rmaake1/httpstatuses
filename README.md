@@ -1,12 +1,14 @@
-# [httpstatuses.com][5]
+# [httpstatuses.io][5]
 
-[![Build Status](https://img.shields.io/circleci/project/citricsquid/httpstatuses.svg)](https://circleci.com/gh/citricsquid/httpstatuses)
+(This project is a revival of the now-defunct httpstatuses.com)
 
-[httpstatuses.com][5] is an easy to reference database of HTTP Status Codes with their definitions and helpful code references, each code is at `httpstatuses.com/code`. All standard codes are included, as are some non-standard codes that have significant presence in the wild.
+[httpstatuses.io][5] is an easy to reference database of HTTP Status Codes with their definitions and helpful code references, each code is at `httpstatuses.io/code`. All standard codes are included, as are some non-standard codes that have significant presence in the wild.
+
+## Development
+
+To build you need nodejs, run `npm install` to pull in dependencies and then `node build`, a preview will be available at [localhost:4887][6].
 
 ## Contributing
-
-To build you need nodejs, run `npm install` to pull in dependencies and then `node build`, a preview will be available at [localhost:4887][8].
 
 All contributions are welcome! If you have an idea to improve the website please submit a pull request or [create an issue][1], or provide your thoughts on [open issues][1].
 
@@ -20,15 +22,9 @@ Each status code lives in a Markdown file at [contents/codes](contents/codes), t
 * [Don't double-space after a period][4], and remove any examples of it
 * If the description references a section in the current RFC, always add the RFC identifier. For example "Section 6.6" should become "RFC1234 Section 6.6"
 
-## httpstatus.es
-
-Previously the project was known as [httpstatus.es][6] but [as per this GitHub issue][7] we migrated to [httpstatuses.com][5] in November 2015 for SEO reasons. The httpstatus.es domain will remain available long term but use of httpstatuses.com is preferred, everything 301's to https://httpstatuses.com. The months following the migration have seen a significant uptake in search engine traffic, if you're running a project on a ccTLD not considered generic by Google and SEO matters it might be worth switching to a generic too.
-
 [1]: <https://github.com/citricsquid/httpstatuses/issues>
 [2]: <https://daringfireball.net/projects/markdown/syntax#link>
 [3]: <http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml>
 [4]: <http://www.slate.com/articles/technology/technology/2011/01/space_invaders.html>
-[5]: <https://httpstatuses.com>
-[6]: <https://httpstatus.es>
-[7]: <https://github.com/citricsquid/httpstatuses/issues/29>
-[8]: <http://localhost:4887>
+[5]: <https://httpstatuses.io>
+[6]: <http://localhost:4887>

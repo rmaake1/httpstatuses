@@ -1,6 +1,6 @@
 {
   "name": "httpstatuses",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An easy to reference directory of HTTP Status Codes",
   "main": "build.js",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/citricsquid/httpstatuses.git"
+    "url": "git+https://github.com/httpstatuses/httpstatuses.git"
   },
-  "author": "Samuel Ryan <sam@samryan.co.uk>",
+  "author": "Jon Kulton <hello@jkulton.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/citricsquid/httpstatuses/issues"
+    "url": "https://github.com/httpstatuses/httpstatuses/issues"
   },
-  "homepage": "https://github.com/citricsquid/httpstatuses#readme",
+  "homepage": "https://github.com/httpstatuses/httpstatuses#readme",
   "dependencies": {
     "finalhandler": "^0.4.1",
     "http": "0.0.0",
