@@ -1,6 +1,6 @@
 # [httpstatuses.io][5]
 
-(This project is a revival of the now-defunct httpstatuses.com)
+This project is a revival of the now-defunct httpstatuses.com ([background](https://jkulton.com/2022/reviving-httpstatuses))
 
 [httpstatuses.io][5] is an easy to reference database of HTTP Status Codes with their definitions and helpful code references, each code is at `httpstatuses.io/code`. All standard codes are included, as are some non-standard codes that have significant presence in the wild.
 
