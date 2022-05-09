@@ -16,5 +16,5 @@ block contents
       ul
         li #[h2 !{group.title}]
         each code in group.items
-          if !code.unlisted
+          unless code.unlisted
             li #[a(href='/#{code.code}') #[span !{code.code}] #{code.title}]
