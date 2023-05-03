@@ -192,7 +192,6 @@ code {
   }
 }
 
-// Support dark mode based on user preference. E.g. in Windows - Settings/Personalization/Colors
 @media (prefers-color-scheme: dark) {
 
   body, .share, code {
@@ -217,4 +216,15 @@ code {
     color: #eee;
   }
 
+  a,
+  .code h1 span,
+  .codes ul li a span {
+    color: #fc308d;
+  }
+
+  a:hover,
+  .share a:hover,
+  .codes ul li a:hover {
+    color: #ff469b;
+  }
 }
