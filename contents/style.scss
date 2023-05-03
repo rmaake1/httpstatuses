@@ -22,7 +22,6 @@ body {
 
 a {
   color: #d6156d;
-  font-weight: bold;
   text-decoration: none;
 
   &:hover {
@@ -38,7 +37,7 @@ a[href^='https://www.runscope.com'] {
 h1, h2, h3, h4, h5, h6 {
   color: #333;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 8px;
   letter-spacing: 0.5px;
 }
@@ -51,6 +50,7 @@ p {
 code {
   background-color: #fff;
   overflow: scroll;
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 }
 
 .hero {
@@ -65,10 +65,6 @@ code {
 
   p {
     margin-bottom: 0px;
-  }
-
-  a {
-    font-weight: bold;
   }
 }
 
@@ -103,7 +99,6 @@ code {
     h2 {
       font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
       font-size: 14px;
-      font-weight: bold;
       margin-bottom: 6px;
     }
 
@@ -122,7 +117,6 @@ code {
           color: #d6156d;
           font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
           font-weight: bold;
-          width: 34px;
         }
       }
     }
@@ -139,6 +133,7 @@ code {
   h1 {
     font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
     text-transform: uppercase;
+    font-weight: bold;
 
     span {
       color: #d6156d;
@@ -153,6 +148,7 @@ code {
     color: #bbb;
     font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
     text-transform: uppercase;
+    font-weight: bold;
   }
 
   ul {
