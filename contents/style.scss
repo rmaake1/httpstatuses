@@ -2,20 +2,6 @@ $container-width: 528px;
 
 @import "../node_modules/skeleton-scss/scss/skeleton.scss";
 
-@font-face {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-style: normal;
-  src: url('open-sans-regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Source Code Pro';
-  font-weight: 700;
-  font-style: normal;
-  src: url('source-code-pro-700.woff') format('woff');
-}
-
 .container {
   margin: auto;
   max-width: $container-width;
@@ -29,14 +15,13 @@ $container-width: 528px;
 
 body {
   color: #556270;
-  font-family: 'Open Sans', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-weight: normal;
   margin: 0px;
 }
 
 a {
   color: #d6156d;
-  font-weight: bold;
   text-decoration: none;
 
   &:hover {
@@ -65,6 +50,7 @@ p {
 code {
   background-color: #fff;
   overflow: scroll;
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 }
 
 .hero {
@@ -79,10 +65,6 @@ code {
 
   p {
     margin-bottom: 0px;
-  }
-
-  a {
-    font-weight: bold;
   }
 }
 
@@ -108,16 +90,15 @@ code {
   margin-bottom: 40px;
 
   ul {
-    font-family: 'Open Sans', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     font-size: 14px;
     letter-spacing: 0.5px;
     list-style-type: none;
     margin-bottom: 10px;
 
     h2 {
-      font-family: 'Open Sans', sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
       font-size: 14px;
-      font-weight: bold;
       margin-bottom: 6px;
     }
 
@@ -134,9 +115,8 @@ code {
 
         span {
           color: #d6156d;
-          font-family: 'Source Code Pro';
+          font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
           font-weight: bold;
-          width: 34px;
         }
       }
     }
@@ -151,8 +131,9 @@ code {
   }
 
   h1 {
-    font-family: 'Source Code Pro';
+    font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
     text-transform: uppercase;
+    font-weight: bold;
 
     span {
       color: #d6156d;
@@ -165,8 +146,9 @@ code {
 
   h2 {
     color: #bbb;
-    font-family: 'Source Code Pro';
+    font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
     text-transform: uppercase;
+    font-weight: bold;
   }
 
   ul {
@@ -210,7 +192,6 @@ code {
   }
 }
 
-// Support dark mode based on user preference. E.g. in Windows - Settings/Personalization/Colors
 @media (prefers-color-scheme: dark) {
 
   body, .share, code {
@@ -235,4 +216,15 @@ code {
     color: #eee;
   }
 
+  a,
+  .code h1 span,
+  .codes ul li a span {
+    color: #fc308d;
+  }
+
+  a:hover,
+  .share a:hover,
+  .codes ul li a:hover {
+    color: #ff469b;
+  }
 }
