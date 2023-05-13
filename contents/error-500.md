@@ -1,6 +1,6 @@
 ---
 title: Internal Server Error
-layout: page.pug
+layout: page.njk
 ---
 
 # Internal Server Error

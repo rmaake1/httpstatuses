@@ -1,6 +1,6 @@
 ---
 title: Page Not Found
-layout: page.pug
+layout: page.njk
 ---
 
 # 404 Page Not Found

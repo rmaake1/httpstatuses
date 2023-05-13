@@ -1,6 +1,6 @@
 ---
 title: HTTP Status Codes
-layout: index.pug
+layout: index.njk
 ---
 
 # HTTP Status Codes
