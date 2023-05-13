@@ -1,0 +1,47 @@
+extends layout.njk
+
+{% extends "layout.njk" %}
+
+{% block title %}
+  <title>{{ code }} {{ title }} &mdash; httpstatuses.io</title>
+{% endblock %}
+
+{% block description %}
+  <meta name='description' content='HTTP Status Code {{ code }}' />
+{% endblock %}
+
+{% block contents %}
+<div class="banner">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <p>
+          <a href='/'>&larr; Return to httpstatuses.io</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<article class="code container">
+  <h2>{{ categories[set] | safe }}</h2>
+  <h1>
+    <span>{{ code }}</span>
+    {{ title }}
+  </h1>
+  {{ content | safe }}
+  {% if code_references %}
+    <h1 class="section">
+      <span>{{ code }}</span> Code References
+    </h1>
+    {% for key, value in code_references %}
+      <p>{{ key }} <code>{{ value }}</code></p>
+    {% endfor %}
+  {% endif %}
+  <a href="/">&larr; Return to httpstatuses.io</a>
+</article>
+{% endblock%}
+
+
+
+
