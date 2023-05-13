@@ -1,0 +1,16 @@
+extends layout.pug
+
+block contents
+  .hero.introduction: .container: .row: .twelve.columns
+    != content
+  .share: .container: .row: .twelve.columns
+    a.twitter(href='https://twitter.com/intent/tweet?hashtags=httpstatuses&text=Helpful%20HTTP%20Status%20Code%20reference%20site&url=https%3A%2F%2Fhttpstatuses.io') &commat; Share on Twitter
+    a.github(href='https://github.com/httpstatuses/httpstatuses') &bigstar; Star on GitHub
+    a.pinboard(target='_blank', href='https://pinboard.in/add?showtags=yes&url=https%3A%2F%2Fhttpstatuses.io&description=HTTP%20Status%20Code%20Reference%20Site&title=httpstatuses.io&tags=reference,development') &oplus; Add to Pinboard
+
+  .container.codes: .row: .twelve.columns
+    each codes, category in collections.codes
+      ul
+        li #[h2 !{categories[category]}]
+        each code in codes
+          li #[a(href=`${code.data.code}`) #[span !{code.data.code}] #{code.data.title}]

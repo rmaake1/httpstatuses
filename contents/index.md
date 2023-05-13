@@ -1,6 +1,6 @@
 ---
 title: HTTP Status Codes
-layout: index.jade
+layout: index.pug
 ---
 
 # HTTP Status Codes

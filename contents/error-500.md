@@ -1,6 +1,6 @@
 ---
 title: Internal Server Error
-layout: page.jade
+layout: page.pug
 ---
 
 # Internal Server Error

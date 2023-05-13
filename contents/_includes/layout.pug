@@ -3,11 +3,13 @@ html(lang="en")
   head
     block title
       title #{title} &mdash; httpstatuses.io
-    link(rel='shortcut icon', href='/' + fingerprint['favicon.ico'], type='image/x-icon')
-    link(rel='stylesheet', href='/' + fingerprint['style.css'])
+    link(rel='shortcut icon', href='/favicon.ico', type='image/x-icon')
+    link(rel='stylesheet', href='style.css')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(charset='utf-8')
     block description
       meta(name='description' content='HTTP Status Code directory, with definitions, details and helpful code references.')
   body
+    if banner
+      block banner
     block contents
