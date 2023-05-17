@@ -1,6 +1,5 @@
-const _ = require('lodash');
-const excerpt = require('./lib/filters/excerpt');
 const prune = require('voca/prune');
+const _ = require('lodash');
 
 module.exports = function(eleventyConfig) {
   ["contents/**.ico", "contents/**.txt"]
