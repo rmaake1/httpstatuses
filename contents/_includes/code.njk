@@ -2,13 +2,9 @@ extends layout.njk
 
 {% extends "layout.njk" %}
 
-{% block title %}
-  <title>{{ code }} {{ title }} &mdash; httpstatuses.io</title>
-{% endblock %}
+{% block title %}<title>{{ code }} {{ title }} &mdash; httpstatuses.io</title>{% endblock %}
 
-{% block description %}
-  <meta name='description' content='HTTP Status Code {{ code }}: {{ content | striptags(true) | excerpt }}' />
-{% endblock %}
+{% block description %}<meta name='description' content='HTTP Status Code {{ code }}: {{ content | striptags(true) | excerpt }}' />{% endblock %}
 
 {% block contents %}
 <div class="banner">
