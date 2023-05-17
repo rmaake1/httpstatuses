@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{{ title }} &mdash; httpstatuses.io</title>
+    {% block title %}
+      <title>{{ title }} &mdash; httpstatuses.io</title>
+    {% endblock %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />

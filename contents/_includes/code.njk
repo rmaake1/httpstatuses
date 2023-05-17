@@ -7,7 +7,7 @@ extends layout.njk
 {% endblock %}
 
 {% block description %}
-  <meta name='description' content='HTTP Status Code {{ code }}' />
+  <meta name='description' content='HTTP Status Code {{ code }}: {{ content | striptags(true) | excerpt }}' />
 {% endblock %}
 
 {% block contents %}
