@@ -6,9 +6,9 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "build": "npx sass contents/style.scss _site/style.css && npx @11ty/eleventy",
+    "build": "npx sass contents/style.scss build/style.css && npx @11ty/eleventy",
     "watch:eleventy": "npx @11ty/eleventy --serve",
-    "watch:sass": "npx sass contents/style.scss _site/style.css --watch",
+    "watch:sass": "npx sass contents/style.scss build/style.css --watch",
     "start": "npm run watch:eleventy & npm run watch:sass",
     "test": "node --test"
   },
