@@ -24,6 +24,7 @@
   "homepage": "https://github.com/httpstatuses/httpstatuses#readme",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "he": "^1.2.0",
     "lodash": "^4.17.21",
     "sass": "^1.62.1",
     "skeleton-scss": "^2.0.4",
