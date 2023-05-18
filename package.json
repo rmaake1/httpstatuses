@@ -6,7 +6,8 @@
     "build": "npx sass contents/style.scss _site/style.css && npx @11ty/eleventy",
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "watch:sass": "npx sass contents/style.scss _site/style.css --watch",
-    "start": "npm run watch:eleventy & npm run watch:sass"
+    "start": "npm run watch:eleventy & npm run watch:sass",
+    "test": "node --test"
   },
   "repository": {
     "type": "git",
