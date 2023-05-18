@@ -4,7 +4,7 @@
   "description": "An easy to reference directory of HTTP Status Codes",
   "main": "build.js",
   "scripts": {
-    "build": "node build.js",
+    "build": "node build.js without-preview",
     "start": "node build.js",
     "test": "node build.js without-preview"
   },
