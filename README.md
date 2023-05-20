@@ -6,9 +6,9 @@ This project is a revival of the now-defunct httpstatuses.com ([background](http
 
 ## Development
 
-App currently builds and runs on Node v12.
+This project requires Node v18+ to build. (Consider using a version manager like [nvm](https://github.com/nvm-sh/nvm) to easily switch node versions!)
 
-Run `npm install` to pull in dependencies and then `node build`, a preview will be available at [localhost:4887][6].
+Run `npm install` to pull in dependencies and then `npm start`. The app should build, run, and be available at [localhost:8080][6].
 
 ## Contributing
 
@@ -29,4 +29,4 @@ Each status code lives in a Markdown file at [contents/codes](contents/codes), t
 [3]: <http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml>
 [4]: <http://www.slate.com/articles/technology/technology/2011/01/space_invaders.html>
 [5]: <https://httpstatuses.io>
-[6]: <http://localhost:4887>
+[6]: <http://localhost:8080/>

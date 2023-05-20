@@ -192,6 +192,19 @@ code {
   }
 }
 
+.site-footer {
+  text-align: center;
+  padding-bottom: 16px;
+  font-size: 11px;
+  color: #bbb;
+  font-variant-numeric: tabular-nums;
+}
+
+.site-footer a {
+  color: currentColor;
+  text-decoration: underline;
+}
+
 @media (prefers-color-scheme: dark) {
 
   body, .share, code {

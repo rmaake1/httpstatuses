@@ -1,0 +1,52 @@
+{% extends "layout.njk" %}
+
+{% block contents %}
+<div class="hero introduction">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        {% if content %}
+          {{ content | safe }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="share">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <a class="twitter" href='https://twitter.com/intent/tweet?hashtags=httpstatuses&text=Helpful%20HTTP%20Status%20Code%20reference%20site&url=https%3A%2F%2Fhttpstatuses.io'>&commat; Share on Twitter</a>
+        <a class="github" href='https://github.com/httpstatuses/httpstatuses'>&bigstar; Star on GitHub</a>
+        <a class="pinboard" target='_blank' href='https://pinboard.in/add?showtags=yes&url=https%3A%2F%2Fhttpstatuses.io&description=HTTP%20Status%20Code%20Reference%20Site&title=httpstatuses.io&tags=reference,development'>&oplus; Add to Pinboard</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container codes">
+  <div class="row">
+    <div class="twelve columns">
+      {% for code, category in collections.codes %}
+        <ul>
+            <li>
+              <h2>{{ categories[code] | safe }}</h2>
+              {% for code in category %}
+                <li>
+                  <a href="{{ code.data.code }}">
+                    <span>{{ code.data.code }}</span> {{ code.data.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            </li>
+        </ul>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="site-footer">
+  httpstatuses <a href="https://github.com/httpstatuses/httpstatuses/releases">v{{ site_version }}</a>
+</div>
+{% endblock %}
