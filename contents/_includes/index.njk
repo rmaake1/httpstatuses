@@ -31,7 +31,7 @@
       {% for code, category in collections.codes %}
         <ul>
             <li>
-              <h2>{{ categories[code] | safe }}</h2>
+              <h2>{{ code }}&times;&times; {{ categories[code] }}</h2>
               {% for code in category %}
                 <li>
                   <a href="{{ code.data.code }}">

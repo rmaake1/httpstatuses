@@ -1,7 +1,7 @@
 {
-    "1": "1&times;&times; Informational",
-    "2": "2&times;&times; Success",
-    "3": "3&times;&times; Redirection",
-    "4": "4&times;&times; Client Error",
-    "5": "5&times;&times; Server Error"
+    "1": "Informational",
+    "2": "Success",
+    "3": "Redirection",
+    "4": "Client Error",
+    "5": "Server Error"
   }
