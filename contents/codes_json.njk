@@ -1,0 +1,13 @@
+---
+pagination:
+  data: collections.codes_json
+  size: 1
+permalink: '/{{ pagination.items[0].data.code }}.json'
+---
+{
+  "status_code": {{ pagination.items[0].data.code }},
+  "title": "{{ pagination.items[0].data.title }}",
+  "description": {{ pagination.items[0].content | firstparagraph | dump | deletehtml | striptags | safe }},
+  "category": "{{ pagination.items[0].data.categories[pagination.items[0].data.set] }}",
+  "html_url": "{{ site.url }}/{{ pagination.items[0].data.code }}"
+}
