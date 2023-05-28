@@ -29,11 +29,6 @@ a {
   }
 }
 
-a[href^='https://www.runscope.com'] {
-  color: #1b70e0;
-  font-weight: bold;
-}
-
 h1, h2, h3, h4, h5, h6 {
   color: #333;
   font-size: 20px;
@@ -90,14 +85,12 @@ code {
   margin-bottom: 40px;
 
   ul {
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     font-size: 14px;
     letter-spacing: 0.5px;
     list-style-type: none;
     margin-bottom: 10px;
 
     h2 {
-      font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
       font-size: 14px;
       margin-bottom: 6px;
     }
