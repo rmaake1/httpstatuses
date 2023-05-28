@@ -1,6 +1,6 @@
 {
   "name": "httpstatuses",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "An easy to reference directory of HTTP Status Codes",
   "engines": {
     "node": ">=18.0.0"
