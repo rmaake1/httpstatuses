@@ -198,6 +198,23 @@ code {
   text-decoration: underline;
 }
 
+.announcement {
+  padding: 16px;
+  border: 1px solid;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.announcement p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.announcement-red {
+  border-color: #d6156d;
+  background: #fcf0f6;
+}
+
 @media (prefers-color-scheme: dark) {
 
   body, .share, code {
@@ -232,5 +249,9 @@ code {
   .share a:hover,
   .codes ul li a:hover {
     color: #ff469b;
+  }
+
+  .announcement-red {
+    background: #36262e;
   }
 }
